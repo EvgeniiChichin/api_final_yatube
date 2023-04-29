@@ -51,8 +51,8 @@ class FollowSerializer(serializers.ModelSerializer):
             ),
         )
 
-    def validate(self, data):
-        if data['user'] == data['following']:
+    def validate(self, value):
+        if self.context['request'].user == value['following']:
             raise serializers.ValidationError(
                 'Вы не можете подписаться на себя!')
-        return data
+        return value
