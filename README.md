@@ -4,6 +4,8 @@ api final
 ### Описание проекта
 
 Проект API для социальной сети Yatube.
+Автор: Евгений Чичин
+
 Для работы с API используeтся:  
 Django Rest Framework  
 Python 3.10  
